@@ -1359,3 +1359,223 @@ textarea.form-input {
         width: 100%;
     }
 }
+
+/* ===========================
+   Blog Styles
+   =========================== */
+
+/* Blog Post Styling */
+.blog-post {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--white);
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.post-header h1 {
+    color: var(--dark-green);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.post-meta {
+    color: var(--text-light);
+    font-size: 0.938rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.post-intro,
+.post-conclusion {
+    margin-bottom: var(--spacing-md);
+}
+
+.post-intro p,
+.post-conclusion p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Park Entry Sections */
+.park-entry {
+    margin: var(--spacing-lg) 0;
+}
+
+.park-entry h2 {
+    color: var(--primary-green);
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.park-entry p {
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.park-entry ul {
+    list-style: none;
+    padding-left: 0;
+    margin: var(--spacing-sm) 0;
+}
+
+.park-entry ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.park-entry ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-yellow);
+    font-weight: 700;
+}
+
+/* Blog CTA Box */
+.blog-cta-box {
+    background: linear-gradient(135deg, var(--cream), var(--light-tan));
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-yellow);
+    margin: var(--spacing-lg) 0;
+}
+
+.blog-cta-box h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-cta-box p {
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.blog-cta-box a {
+    color: var(--primary-green);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.blog-cta-box a:hover {
+    color: var(--primary-green-dark);
+}
+
+/* Park Etiquette Section */
+.park-etiquette {
+    margin: var(--spacing-lg) 0;
+}
+
+.park-etiquette h2 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-sm);
+}
+
+.park-etiquette ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.park-etiquette ul li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    border-bottom: 1px solid var(--light-tan);
+}
+
+.park-etiquette ul li:last-child {
+    border-bottom: none;
+}
+
+.park-etiquette ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-yellow);
+    font-weight: 700;
+}
+
+/* Related Posts */
+.related-posts {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--light-tan);
+}
+
+.related-posts h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.related-post-card {
+    background-color: var(--cream);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.related-post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-yellow);
+}
+
+.related-post-card h4 {
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-xs);
+}
+
+.related-post-card p {
+    color: var(--text-light);
+    font-size: 0.938rem;
+}
+
+/* Blog Grid on Index */
+.blog-grid {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--white);
+}
+
+.blog-card {
+    display: block;
+    height: 100%;
+}
+
+.blog-meta {
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Blog Responsive */
+@media (max-width: 768px) {
+    .post-header h1 {
+        font-size: 2rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .related-posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .park-entry h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -55,6 +55,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://scoopster.ca/blog/</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scoopster.ca/blog/best-dog-parks-hamilton/</loc>
+    <lastmod>2025-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://scoopster.ca/pricing/</loc>
     <lastmod>2025-12-20</lastmod>
     <changefreq>monthly</changefreq>
