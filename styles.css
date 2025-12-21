@@ -1469,6 +1469,15 @@ textarea.form-input {
     color: var(--primary-green-dark);
 }
 
+.blog-cta-box .btn {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.blog-cta-box .btn:hover {
+    color: var(--white);
+}
+
 /* Park Etiquette Section */
 .park-etiquette {
     margin: var(--spacing-lg) 0;
