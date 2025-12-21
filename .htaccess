@@ -1,0 +1,9 @@
+# Ensure XML files are served with correct MIME type
+<FilesMatch "\.xml$">
+  Header set Content-Type "application/xml; charset=utf-8"
+</FilesMatch>
+
+# Enable CORS for sitemap
+<FilesMatch "sitemap\.xml$">
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>

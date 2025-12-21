@@ -1,0 +1,4 @@
+# Headers for Netlify
+/sitemap.xml
+  Content-Type: application/xml
+  X-Robots-Tag: noindex
