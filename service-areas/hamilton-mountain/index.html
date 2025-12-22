@@ -97,13 +97,13 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Dog Poop Pickup on Hamilton Mountain</h1>
-            <p class="hero-intro">
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%2334a853%22 width=%221200%22 height=%22600%22/%3E%3Cpath fill=%22%2329923f%22 d=%22M0 300L50 320C100 340 200 380 300 380C400 380 500 340 600 320C700 300 800 300 900 310C1000 320 1100 340 1150 350L1200 360V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z%22/%3E%3C/svg%3E') center/cover; min-height: 500px; display: flex; align-items: center; color: white;">
+        <div class="container" style="text-align: center;">
+            <h1 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Dog Poop Pickup on Hamilton Mountain</h1>
+            <p class="hero-intro" style="color: white; font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;">
                 Hamilton Mountain is one of our busiest service areas — and for good reason. With plenty of dog-friendly neighbourhoods, parks, and families with pets, there's no shortage of yards that need regular cleanup. Scoopster keeps Mountain residents' backyards clean so they can actually enjoy their outdoor space.
             </p>
-            <div class="hero-cta">
+            <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="../../contact/" class="btn btn-primary">Get a Free Quote</a>
                 <a href="../../pricing/" class="btn btn-secondary">View Pricing</a>
             </div>
@@ -149,11 +149,6 @@
                     <h3>One-Time Cleanup</h3>
                     <p>Catch-up service starting at $75.</p>
                 </a>
-                <a href="../../services/commercial-pet-waste-removal/" class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Service</h3>
-                    <p>Apartments, townhouse complexes, and more.</p>
-                </a>
             </div>
         </div>
     </section>
@@ -162,7 +157,7 @@
     <section class="why-us">
         <div class="container">
             <h2 class="section-title">Why Choose Scoopster</h2>
-            <div class="why-grid">
+            <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 <div class="why-item">
                     <div class="why-number">🗺️</div>
                     <h3>Local Team</h3>
@@ -188,43 +183,54 @@
                     <h3>Satisfaction Guaranteed</h3>
                     <p>If we miss something, we come back. Simple as that.</p>
                 </div>
+                <div class="why-item">
+                    <div class="why-number">🌱</div>
+                    <h3>Eco-Friendly Disposal</h3>
+                    <p>Environmentally responsible waste disposal following all local guidelines.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">🛡️</div>
+                    <h3>Insured & Bonded</h3>
+                    <p>Fully insured for your peace of mind and property protection.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">🕐</div>
+                    <h3>Same Day Every Week</h3>
+                    <p>Consistent scheduling on the same day each week so you know when to expect us.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Table -->
-    <section class="pricing-snapshot">
+    <section class="pricing-snapshot" style="background-color: #f9f6f1; padding: 4rem 0;">
         <div class="container">
             <h2 class="section-title">Pricing</h2>
-            <div style="max-width: 600px; margin: 0 auto;">
-                <table style="width: 100%; border-collapse: collapse; margin: 2rem auto;">
+            <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem auto;">
                     <thead>
                         <tr style="background-color: var(--primary-green); color: var(--white);">
-                            <th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0;">Service</th>
-                            <th style="padding: 1rem; text-align: right; border-radius: 0 8px 0 0;">Starting Price</th>
+                            <th style="padding: 1.25rem; text-align: left; border-radius: 8px 0 0 0; font-size: 1.1rem;">Service</th>
+                            <th style="padding: 1.25rem; text-align: right; border-radius: 0 8px 0 0; font-size: 1.1rem;">Starting Price</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$25/week</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$25/week</td>
                         </tr>
                         <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Bi-Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$20/visit</td>
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Bi-Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$20/visit</td>
                         </tr>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">One-Time Cleanup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$75+</td>
-                        </tr>
-                        <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem;">Commercial</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600;">Custom quote</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem;">One-Time Cleanup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; color: var(--primary-green); font-size: 1.1rem;">$75+</td>
                         </tr>
                     </tbody>
                 </table>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="../../contact/" class="btn btn-primary">Get Your Custom Quote</a>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="../../contact/" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Get Your Custom Quote</a>
                 </div>
             </div>
         </div>
@@ -237,15 +243,15 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <h3>Do you service all parts of the Mountain?</h3>
-                    <p>Yes. We cover all Mountain neighbourhoods from the escarpment to Rymal and beyond.</p>
+                    <p>Yes, we cover all Mountain neighbourhoods from the escarpment to Rymal and beyond. Our extensive service area includes Upper Gage, Concession, Limeridge, Mountain Brow, and all areas in between. No matter where you live on the Mountain, we've got you covered.</p>
                 </div>
                 <div class="faq-item">
                     <h3>What day would my pickup be?</h3>
-                    <p>We assign days by area for route efficiency. You'll get a consistent weekly day.</p>
+                    <p>We assign service days by area for maximum route efficiency, which helps us keep prices low and service reliable. Once you sign up, you'll get a consistent weekly day that we stick to every week. You'll always know exactly when to expect us.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Can you access my backyard if my gate is locked?</h3>
-                    <p>We can work with combination locks or hidden keys. Just let us know during signup.</p>
+                    <p>Absolutely. We can work with combination locks, hidden keys, or any access arrangement that works for you. Just let us know your preferred method during signup, and we'll make sure our team has the information they need to access your yard safely and securely.</p>
                 </div>
             </div>
         </div>

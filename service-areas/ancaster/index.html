@@ -97,13 +97,13 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Dog Poop Pickup in Ancaster</h1>
-            <p class="hero-intro">
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%2334a853%22 width=%221200%22 height=%22600%22/%3E%3Cpath fill=%22%2329923f%22 d=%22M0 300L50 320C100 340 200 380 300 380C400 380 500 340 600 320C700 300 800 300 900 310C1000 320 1100 340 1150 350L1200 360V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z%22/%3E%3C/svg%3E') center/cover; min-height: 500px; display: flex; align-items: center; color: white;">
+        <div class="container" style="text-align: center;">
+            <h1 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Dog Poop Pickup in Ancaster</h1>
+            <p class="hero-intro" style="color: white; font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;">
                 Ancaster's beautiful properties and dog-friendly community make it one of the best places to own a pet in the Hamilton area. But with great yards come great piles. Scoopster helps Ancaster dog owners maintain their outdoor spaces without the dirty work.
             </p>
-            <div class="hero-cta">
+            <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="../../contact/" class="btn btn-primary">Get a Free Quote</a>
                 <a href="../../pricing/" class="btn btn-secondary">View Pricing</a>
             </div>
@@ -148,11 +148,6 @@
                     <h3>One-Time Cleanup</h3>
                     <p>Spring cleanup or reset. Starting at $75.</p>
                 </a>
-                <a href="../../services/commercial-pet-waste-removal/" class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Service</h3>
-                    <p>Office parks, townhouse complexes, and more.</p>
-                </a>
             </div>
         </div>
     </section>
@@ -161,7 +156,7 @@
     <section class="why-us">
         <div class="container">
             <h2 class="section-title">Why Choose Scoopster</h2>
-            <div class="why-grid">
+            <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 <div class="why-item">
                     <div class="why-number">🏡</div>
                     <h3>Familiar with Ancaster</h3>
@@ -187,46 +182,57 @@
                     <h3>Service Guarantee</h3>
                     <p>If we miss something, we'll make it right.</p>
                 </div>
+                <div class="why-item">
+                    <div class="why-number">🌱</div>
+                    <h3>Eco-Friendly Disposal</h3>
+                    <p>Environmentally responsible waste disposal following all local guidelines.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">🛡️</div>
+                    <h3>Insured & Bonded</h3>
+                    <p>Fully insured for your peace of mind and property protection.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">🕐</div>
+                    <h3>Same Day Every Week</h3>
+                    <p>Consistent scheduling on the same day each week so you know when to expect us.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Table -->
-    <section class="pricing-snapshot">
+    <section class="pricing-snapshot" style="background-color: #f9f6f1; padding: 4rem 0;">
         <div class="container">
             <h2 class="section-title">Pricing</h2>
-            <div style="max-width: 600px; margin: 0 auto;">
-                <table style="width: 100%; border-collapse: collapse; margin: 2rem auto;">
+            <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem auto;">
                     <thead>
                         <tr style="background-color: var(--primary-green); color: var(--white);">
-                            <th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0;">Service</th>
-                            <th style="padding: 1rem; text-align: right; border-radius: 0 8px 0 0;">Starting Price</th>
+                            <th style="padding: 1.25rem; text-align: left; border-radius: 8px 0 0 0; font-size: 1.1rem;">Service</th>
+                            <th style="padding: 1.25rem; text-align: right; border-radius: 0 8px 0 0; font-size: 1.1rem;">Starting Price</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$25/week</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$25/week</td>
                         </tr>
                         <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Bi-Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$20/visit</td>
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Bi-Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$20/visit</td>
                         </tr>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">One-Time Cleanup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$75+</td>
-                        </tr>
-                        <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem;">Commercial</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600;">Custom quote</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem;">One-Time Cleanup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; color: var(--primary-green); font-size: 1.1rem;">$75+</td>
                         </tr>
                     </tbody>
                 </table>
-                <p style="text-align: center; color: var(--text-light); font-size: 0.938rem; margin-top: 1rem;">
+                <p style="text-align: center; color: #666; font-size: 0.938rem; margin-top: 1.5rem;">
                     <em>Note: Larger Ancaster properties may be quoted slightly higher based on yard size.</em>
                 </p>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="../../contact/" class="btn btn-primary">Get Your Custom Quote</a>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="../../contact/" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Get Your Custom Quote</a>
                 </div>
             </div>
         </div>
@@ -239,15 +245,15 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <h3>Do larger Ancaster lots cost more?</h3>
-                    <p>Sometimes. We quote based on yard size and number of dogs, so larger properties may be slightly higher than our starting rates.</p>
+                    <p>Sometimes, yes. We provide custom quotes based on your yard size and the number of dogs you have. While our starting rates are very competitive, larger Ancaster properties with more extensive cleanup needs may be quoted slightly higher to ensure we provide thorough service. We'll always give you a transparent quote upfront before you commit.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Do you service the rural edges of Ancaster?</h3>
-                    <p>Most of Ancaster is within our service area. If you're on the outskirts, reach out and we'll confirm.</p>
+                    <p>Most of Ancaster falls within our regular service area, including many rural and semi-rural properties. If you're located on the outskirts or in a more remote area, reach out to us and we'll confirm whether we can include you in our routes. We're always looking to expand our coverage.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Can I book service for just spring and summer?</h3>
-                    <p>Absolutely. Seasonal service is available, and you can pause or restart anytime.</p>
+                    <p>Absolutely! Seasonal service is one of our most popular options. Many customers prefer service during warmer months when they use their yards more frequently. You can pause your service in the fall and restart it in the spring with no hassle or fees.</p>
                 </div>
             </div>
         </div>

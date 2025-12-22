@@ -97,13 +97,13 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Dog Poop Pickup in Stoney Creek</h1>
-            <p class="hero-intro">
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%2334a853%22 width=%221200%22 height=%22600%22/%3E%3Cpath fill=%22%2329923f%22 d=%22M0 300L50 320C100 340 200 380 300 380C400 380 500 340 600 320C700 300 800 300 900 310C1000 320 1100 340 1150 350L1200 360V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z%22/%3E%3C/svg%3E') center/cover; min-height: 500px; display: flex; align-items: center; color: white;">
+        <div class="container" style="text-align: center;">
+            <h1 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Dog Poop Pickup in Stoney Creek</h1>
+            <p class="hero-intro" style="color: white; font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;">
                 Stoney Creek's mix of established neighbourhoods and newer developments means lots of families — and lots of dogs. Whether you're near the lake, up on the escarpment, or somewhere in between, Scoopster provides reliable yard cleanup so you can enjoy your outdoor space without the mess.
             </p>
-            <div class="hero-cta">
+            <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="../../contact/" class="btn btn-primary">Get a Free Quote</a>
                 <a href="../../pricing/" class="btn btn-secondary">View Pricing</a>
             </div>
@@ -149,11 +149,6 @@
                     <h3>One-Time Cleanup</h3>
                     <p>Spring cleanup or catch-up starting at $75.</p>
                 </a>
-                <a href="../../services/commercial-pet-waste-removal/" class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Commercial Service</h3>
-                    <p>Townhouse complexes, rentals, businesses.</p>
-                </a>
             </div>
         </div>
     </section>
@@ -162,7 +157,7 @@
     <section class="why-us">
         <div class="container">
             <h2 class="section-title">Why Choose Scoopster</h2>
-            <div class="why-grid">
+            <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 <div class="why-item">
                     <div class="why-number">🚗</div>
                     <h3>Dedicated Routes</h3>
@@ -188,43 +183,54 @@
                     <h3>100% Satisfaction Guaranteed</h3>
                     <p>If we miss something, we'll make it right.</p>
                 </div>
+                <div class="why-item">
+                    <div class="why-number">🌱</div>
+                    <h3>Eco-Friendly Disposal</h3>
+                    <p>Environmentally responsible waste disposal following all local guidelines.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">🛡️</div>
+                    <h3>Insured & Bonded</h3>
+                    <p>Fully insured for your peace of mind and property protection.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-number">📅</div>
+                    <h3>Same Day Every Week</h3>
+                    <p>Consistent scheduling on the same day each week so you know when to expect us.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Table -->
-    <section class="pricing-snapshot">
+    <section class="pricing-snapshot" style="background-color: #f9f6f1; padding: 4rem 0;">
         <div class="container">
             <h2 class="section-title">Pricing</h2>
-            <div style="max-width: 600px; margin: 0 auto;">
-                <table style="width: 100%; border-collapse: collapse; margin: 2rem auto;">
+            <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <table style="width: 100%; border-collapse: collapse; margin: 1.5rem auto;">
                     <thead>
                         <tr style="background-color: var(--primary-green); color: var(--white);">
-                            <th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0;">Service</th>
-                            <th style="padding: 1rem; text-align: right; border-radius: 0 8px 0 0;">Starting Price</th>
+                            <th style="padding: 1.25rem; text-align: left; border-radius: 8px 0 0 0; font-size: 1.1rem;">Service</th>
+                            <th style="padding: 1.25rem; text-align: right; border-radius: 0 8px 0 0; font-size: 1.1rem;">Starting Price</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$25/week</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$25/week</td>
                         </tr>
                         <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Bi-Weekly Pickup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$20/visit</td>
+                            <td style="padding: 1.25rem; border-bottom: 1px solid #e5dcc8;">Bi-Weekly Pickup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; border-bottom: 1px solid #e5dcc8; color: var(--primary-green); font-size: 1.1rem;">$20/visit</td>
                         </tr>
-                        <tr style="background-color: var(--cream);">
-                            <td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">One-Time Cleanup</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600; border-bottom: 1px solid var(--light-tan);">$75+</td>
-                        </tr>
-                        <tr style="background-color: var(--white);">
-                            <td style="padding: 1rem;">Commercial</td>
-                            <td style="padding: 1rem; text-align: right; font-weight: 600;">Custom quote</td>
+                        <tr style="background-color: #f9f6f1;">
+                            <td style="padding: 1.25rem;">One-Time Cleanup</td>
+                            <td style="padding: 1.25rem; text-align: right; font-weight: 600; color: var(--primary-green); font-size: 1.1rem;">$75+</td>
                         </tr>
                     </tbody>
                 </table>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="../../contact/" class="btn btn-primary">Get Your Custom Quote</a>
+                <div style="text-align: center; margin-top: 2.5rem;">
+                    <a href="../../contact/" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">Get Your Custom Quote</a>
                 </div>
             </div>
         </div>
@@ -237,15 +243,15 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <h3>Do you come all the way to Fifty Point or Winona?</h3>
-                    <p>Yes. We cover all of Stoney Creek from Winona to the Hamilton border.</p>
+                    <p>Yes, we service all of Stoney Creek from Winona to the Hamilton border and everywhere in between. Whether you're near the lake, up on the escarpment, or anywhere else in Stoney Creek, we've got you covered with our dedicated local routes.</p>
                 </div>
                 <div class="faq-item">
                     <h3>What about winter service?</h3>
-                    <p>We operate year-round. Cold and snow don't stop us.</p>
+                    <p>We operate year-round with no seasonal breaks. Cold temperatures and snow don't stop us from providing reliable service. We'll still come on your scheduled day even in the middle of winter, ensuring your yard stays clean in all seasons.</p>
                 </div>
                 <div class="faq-item">
                     <h3>How do I know you came?</h3>
-                    <p>We send confirmation after each visit so you always know your yard was serviced.</p>
+                    <p>We send a service confirmation after each visit via email or text message, so you'll always know when your yard was cleaned. This gives you peace of mind, especially if you're at work or away from home during service times.</p>
                 </div>
             </div>
         </div>
