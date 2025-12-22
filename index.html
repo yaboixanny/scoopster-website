@@ -109,6 +109,41 @@
         </div>
     </section>
 
+    <!-- Team Section -->
+    <section class="team-intro" style="padding: 4rem 0; background-color: var(--white);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">The Team Behind Scoopster</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Scoopster is a family-run business founded by Alexander and Olena, two Hamilton locals who understand the challenges of keeping your yard clean when you have dogs. What started as a simple solution to help busy neighbors has grown into a trusted service across Hamilton.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                        Alexander handles operations and customer service, ensuring every yard gets the attention it deserves. Olena manages scheduling and quality control, making sure our service runs smoothly week after week. Together, they've built a business based on reliability, care, and a genuine love for helping Hamilton's dog owners.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        And of course, there's Michelle—our tiny Malti-Poo supervisor who inspired this whole venture. She may be small, but she's got a big personality and keeps us motivated to provide the best service possible!
+                    </p>
+                </div>
+                <div>
+                    <img src="/images/scoopster-about.jpg" alt="Alexander, Olena, and Michelle - The Scoopster Team" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @media (max-width: 768px) {
+            .team-intro .container > div {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            .team-intro img {
+                order: -1;
+            }
+        }
+    </style>
+
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
@@ -520,7 +555,7 @@
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="tel:+19055550123">(905) 555-0123</a></li>
+                        <li><a href="tel:+12896984155">289-698-4155</a></li>
                         <li><a href="mailto:info@scoopster.ca">info@scoopster.ca</a></li>
                         <li>Hamilton, Ontario</li>
                     </ul>

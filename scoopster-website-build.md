@@ -192,7 +192,7 @@ White (backgrounds): #FFFFFF
 Column 1 - About:
 - Scoopster logo (white version)
 - 2-3 sentence description
-- Phone: (905) 555-0123
+- Phone: 289-698-4155
 - Email: info@scoopster.ca
 
 Column 2 - Services:
@@ -268,7 +268,7 @@ Column 4 - Quick Links:
 ## Placeholder Content
 
 - Logo: "Scoopster" text logo with poop scoop or dog icon
-- Phone: (905) 555-0123
+- Phone: 289-698-4155
 - Email: info@scoopster.ca
 - Website: scoopster.ca
 - Address: Hamilton, ON (no specific street address)
@@ -643,7 +643,7 @@ A: We scoop year-round, including through Hamilton winters. Snow and cold don't 
 │   Stop spending your weekends on poop patrol.               │
 │   Scoopster handles the dirty work.                         │
 │                                                             │
-│        [Get Your Free Quote]    [Call (905) 555-0123]       │
+│        [Get Your Free Quote]    [Call 289-698-4155]       │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -655,7 +655,7 @@ H2: Ready for a Cleaner Yard?
 Stop spending your weekends on poop patrol. Scoopster handles the dirty work so you can actually enjoy your outdoor space.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -669,7 +669,7 @@ Include LocalBusiness schema:
   "name": "Scoopster",
   "description": "Professional dog poop pickup service in Hamilton, Ontario",
   "url": "https://scoopster.ca",
-  "telephone": "(905) 555-0123",
+  "telephone": "289-698-4155",
   "email": "info@scoopster.ca",
   "areaServed": {
     "@type": "City",
@@ -848,7 +848,7 @@ H2: Ready for a Cleaner Yard Every Week?
 Stop dreading the backyard. Scoopster handles the dirty work so you can enjoy your outdoor space again.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -971,7 +971,7 @@ H2: Clean Yard, Lower Cost
 Get the poop-free yard you want without paying for more service than you need.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1096,7 +1096,7 @@ H2: Let's Get Your Yard Back
 No shame. No lectures. Just a clean yard by the time we leave.
 
 CTA 1: Book Your Cleanup
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1129,7 +1129,7 @@ H1: Commercial Pet Waste Removal in Hamilton
 Dog waste on commercial properties is a liability — for tenant satisfaction, property value, and health. Scoopster provides reliable, scheduled pet waste removal for apartment complexes, condo communities, HOAs, dog daycares, and any property where dogs are welcome. We keep shared spaces clean so you don't have to chase down residents or deal with complaints.
 
 CTA 1: Get a Custom Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1246,7 +1246,7 @@ H2: Keep Your Property Clean and Tenants Happy
 Professional pet waste removal that's reliable, affordable, and one less thing on your plate.
 
 CTA 1: Get a Custom Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1394,7 +1394,7 @@ H2: Ready to Get Started?
 Find out if we service your area and get a free quote today.
 
 CTA 1: Get a Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1517,7 +1517,7 @@ H2: Get a Cleaner Yard on the Mountain
 Join your neighbours who've already handed off this chore. Scoopster makes it easy.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1640,7 +1640,7 @@ H2: Stoney Creek's Trusted Poop Pickup Service
 Your neighbours are already enjoying cleaner yards. Ready to join them?
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1764,7 +1764,7 @@ H2: Ancaster's Go-To Yard Cleanup Service
 More time enjoying your property. Less time picking up after your dog.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -1885,7 +1885,7 @@ H2: Dundas Yards Deserve Better
 You've got hiking trails to explore and local shops to visit. Let Scoopster take yard cleanup off your list.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -2006,7 +2006,7 @@ H2: Keep Your Waterdown Yard Clean
 Join your neighbours who've already made the switch. Scoopster handles the mess.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -2138,7 +2138,7 @@ H2: Get Your Free Quote
 Tell us about your yard and we'll give you an exact price — no obligation, no pressure.
 
 CTA 1: Get Your Free Quote
-CTA 2: Call (905) 555-0123
+CTA 2: Call 289-698-4155
 
 ---
 
@@ -2267,7 +2267,7 @@ Have questions? Ready to book? We're here to help. Reach out by phone, email, or
 
 H2: Get in Touch
 
-**Phone:** (905) 555-0123
+**Phone:** 289-698-4155
 *Call or text. We respond fast.*
 
 **Email:** info@scoopster.ca
@@ -2331,7 +2331,7 @@ H2: Let's Talk
 
 Ready to get your yard cleaned up? We're just a message away.
 
-CTA: Call (905) 555-0123
+CTA: Call 289-698-4155
 
 ---
 
