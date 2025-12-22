@@ -1,6 +1,28 @@
 [build]
   publish = "."
 
+# Disable Netlify's automatic sitemap generation
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = false
+  minify = false
+
+# Disable automatic sitemap plugin
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+    exclude = ["*"]
+
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
