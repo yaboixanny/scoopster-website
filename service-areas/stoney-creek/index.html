@@ -97,15 +97,29 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%2334a853%22 width=%221200%22 height=%22600%22/%3E%3Cpath fill=%22%2329923f%22 d=%22M0 300L50 320C100 340 200 380 300 380C400 380 500 340 600 320C700 300 800 300 900 310C1000 320 1100 340 1150 350L1200 360V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z%22/%3E%3C/svg%3E') center/cover; min-height: 500px; display: flex; align-items: center; color: white;">
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8') center/cover; min-height: 500px; display: flex; align-items: center; color: white;">
         <div class="container" style="text-align: center;">
             <h1 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Dog Poop Pickup in Stoney Creek</h1>
             <p class="hero-intro" style="color: white; font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;">
                 Stoney Creek's mix of established neighbourhoods and newer developments means lots of families — and lots of dogs. Whether you're near the lake, up on the escarpment, or somewhere in between, Scoopster provides reliable yard cleanup so you can enjoy your outdoor space without the mess.
             </p>
+            <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; font-size: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--accent-yellow); font-size: 1.5rem;">✓</span>
+                    <span>Trusted by 500+ Families</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--accent-yellow); font-size: 1.5rem;">✓</span>
+                    <span>5+ Years Experience</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--accent-yellow); font-size: 1.5rem;">✓</span>
+                    <span>100% Satisfaction Guaranteed</span>
+                </div>
+            </div>
             <div class="hero-cta" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="../../contact/" class="btn btn-primary">Get a Free Quote</a>
-                <a href="../../pricing/" class="btn btn-secondary">View Pricing</a>
+                <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+                <a href="#pricing" class="btn btn-secondary">View Pricing</a>
             </div>
         </div>
     </section>
@@ -203,7 +217,7 @@
     </section>
 
     <!-- Pricing Table -->
-    <section class="pricing-snapshot" style="background-color: #f9f6f1; padding: 4rem 0;">
+    <section id="pricing" class="pricing-snapshot" style="background-color: #f9f6f1; padding: 4rem 0;">
         <div class="container">
             <h2 class="section-title">Pricing</h2>
             <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -252,6 +266,80 @@
                 <div class="faq-item">
                     <h3>How do I know you came?</h3>
                     <p>We send a service confirmation after each visit via email or text message, so you'll always know when your yard was cleaned. This gives you peace of mind, especially if you're at work or away from home during service times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote" class="contact" style="background-color: var(--cream); padding: 4rem 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">Get Your Free Quote</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Ready to enjoy a cleaner yard? Fill out the form below and we'll get back to you within a few hours with a custom quote for your Stoney Creek property.</p>
+
+                <form class="contact-form" name="contact-stoney-creek" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <input type="hidden" name="form-name" value="contact-stoney-creek">
+                    <input type="hidden" name="location" value="Stoney Creek">
+                    <p style="display: none;">
+                        <label>Don't fill this out: <input name="bot-field"></label>
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="text-align: left;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name *</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div style="text-align: left;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 1rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 1rem;">
+                        <label for="address" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Street Address *</label>
+                        <input type="text" id="address" name="address" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="text-align: left;">
+                            <label for="dogs" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Number of Dogs *</label>
+                            <select id="dogs" name="dogs" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                                <option value="">Select...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div style="text-align: left;">
+                            <label for="service" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Service Needed *</label>
+                            <select id="service" name="service" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                                <option value="">Select...</option>
+                                <option value="weekly">Weekly Pickup</option>
+                                <option value="biweekly">Bi-Weekly Pickup</option>
+                                <option value="onetime">One-Time Cleanup</option>
+                                <option value="notsure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="text-align: left; margin-bottom: 1.5rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Additional Details (optional)</label>
+                        <textarea id="message" name="message" rows="3" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;" placeholder="Yard size, special requests, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">Get My Free Quote</button>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">We'll respond within a few hours during business days.</p>
+                </form>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--white); border-radius: 8px; border-left: 4px solid var(--primary-green);">
+                    <p style="margin: 0; font-size: 1rem;"><strong>Prefer to call?</strong> Reach us at <a href="tel:+19055550123" style="color: var(--primary-green); font-weight: 600;">(905) 555-0123</a></p>
                 </div>
             </div>
         </div>
