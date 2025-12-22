@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://scoopster.ca/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://scoopster.ca/service-areas/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -50,12 +50,18 @@
   </url>
   <url>
     <loc>https://scoopster.ca/about/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/blog/</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scoopster.ca/blog/stoney-creek-parks-puppy-socialization/</loc>
     <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -68,55 +74,55 @@
   </url>
   <url>
     <loc>https://scoopster.ca/blog/why-clean-up-dog-poop/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/blog/best-dog-parks-hamilton/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/blog/best-doggy-daycares-hamilton/</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/pricing/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/services/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/services/bi-weekly-dog-poop-pickup/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/services/commercial-pet-waste-removal/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/services/weekly-dog-poop-pickup/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/services/one-time-yard-cleanup/</loc>
-    <lastmod>2025-12-20</lastmod>
+    <lastmod>2025-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
