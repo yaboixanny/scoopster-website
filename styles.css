@@ -248,9 +248,26 @@ h3 {
     padding: 0.5rem 0;
     margin-top: 0.5rem;
     z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.2s ease, visibility 0s linear 0.3s;
+    visibility: hidden;
 }
 
 .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease, visibility 0s;
+}
+
+/* Add padding to dropdown area to create hover buffer */
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    right: -1rem;
+    height: 0.5rem;
     display: block;
 }
 
