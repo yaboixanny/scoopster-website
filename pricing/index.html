@@ -51,6 +51,56 @@
         </div>
     </section>
     <section class="pricing"><div class="container"><h2 class="section-title">Our Plans</h2><table style="width: 100%; max-width: 900px; margin: 2rem auto; border-collapse: collapse;"><thead><tr style="background-color: var(--primary-green); color: var(--white);"><th style="padding: 1rem; text-align: left; border-radius: 8px 0 0 0;">Service</th><th style="padding: 1rem; text-align: center;">Starting Price</th><th style="padding: 1rem; text-align: left; border-radius: 0 8px 0 0;">Best For</th></tr></thead><tbody><tr style="background-color: var(--cream);"><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);"><strong>Weekly Pickup</strong></td><td style="padding: 1rem; text-align: center; font-weight: 600; color: var(--primary-green); border-bottom: 1px solid var(--light-tan);">$25/week</td><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Multi-dog homes, small yards, busy families</td></tr><tr style="background-color: var(--white);"><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);"><strong>Bi-Weekly Pickup</strong></td><td style="padding: 1rem; text-align: center; font-weight: 600; color: var(--primary-green); border-bottom: 1px solid var(--light-tan);">$20/visit</td><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Single-dog homes, larger yards, budget-conscious</td></tr><tr style="background-color: var(--cream);"><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);"><strong>One-Time Cleanup</strong></td><td style="padding: 1rem; text-align: center; font-weight: 600; color: var(--primary-green); border-bottom: 1px solid var(--light-tan);">$75+</td><td style="padding: 1rem; border-bottom: 1px solid var(--light-tan);">Spring cleanup, moving, catching up</td></tr><tr style="background-color: var(--white);"><td style="padding: 1rem;"><strong>Commercial</strong></td><td style="padding: 1rem; text-align: center; font-weight: 600; color: var(--primary-green);">Custom</td><td style="padding: 1rem;">Apartments, condos, HOAs, daycares</td></tr></tbody></table><p style="text-align: center; color: var(--text-light); margin-top: 1rem;"><em>All prices are per visit. Final quote based on yard size, number of dogs, and access.</em></p></div></section>
+    <!-- Pricing Calculator Section -->
+    <section class="pricing" style="background-color: var(--cream);">
+        <div class="container">
+            <h2 class="section-title">Pricing Calculator</h2>
+            <p class="section-subtitle">Get an instant estimate for your yard</p>
+
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="numDogs">Number of Dogs</label>
+                        <select id="numDogs" class="form-input">
+                            <option value="1">1 Dog</option>
+                            <option value="2">2 Dogs</option>
+                            <option value="3">3 Dogs</option>
+                            <option value="4">4+ Dogs</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="yardSize">Yard Size</label>
+                        <select id="yardSize" class="form-input">
+                            <option value="small">Small (under 2000 sq ft)</option>
+                            <option value="medium">Medium (2000-5000 sq ft)</option>
+                            <option value="large">Large (5000+ sq ft)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Service Frequency</label>
+                        <select id="frequency" class="form-input">
+                            <option value="weekly">Weekly</option>
+                            <option value="biweekly">Bi-Weekly</option>
+                            <option value="onetime">One-Time Cleanup</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="calculatePrice()">Calculate Price</button>
+                </div>
+
+                <div class="calculator-result" id="priceResult">
+                    <div class="result-card">
+                        <p class="result-label">Estimated Price</p>
+                        <p class="result-price" id="priceAmount">$0</p>
+                        <p class="result-frequency" id="priceFrequency">per visit</p>
+                        <p class="result-note">Prices include tax. First cleanup may have additional one-time fee for heavily soiled yards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="included">
         <div class="container">
             <h2 class="section-title">How We Calculate Your Quote</h2>
