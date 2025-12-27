@@ -74,7 +74,7 @@ This template provides a consistent, professional format for all Scoopster blog 
 
 ### Section Structure
 ```html
-<section class="content-section" style="margin: 1.5rem 0;">
+<section class="content-section" style="margin: 0.75rem 0;">
     <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1rem;">
         [Section Title]
     </h2>
@@ -227,7 +227,7 @@ This template provides a consistent, professional format for all Scoopster blog 
 - **Body:** 1rem, line-height 1.8
 
 ### Spacing
-- Sections: 1.5rem vertical margin
+- Sections: 0.75rem vertical margin
 - HR divider: 2rem vertical margin
 - Paragraphs: 1rem bottom margin
 - Callout boxes: 1.5rem vertical margin
