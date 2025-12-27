@@ -56,13 +56,25 @@
   </url>
   <url>
     <loc>https://scoopster.ca/blog/</loc>
-    <lastmod>2025-12-26</lastmod>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scoopster.ca/blog/hamilton-dog-events-calendar/</loc>
+    <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://scoopster.ca/blog/hidden-dangers-dog-waste-hamilton-watershed-lake-ontario/</loc>
     <lastmod>2025-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://scoopster.ca/blog/hamilton-dog-poop-bylaws/</loc>
+    <lastmod>2025-12-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
