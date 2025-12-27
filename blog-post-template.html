@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[META DESCRIPTION 150-160 CHARACTERS]">
+    <meta name="keywords" content="[KEYWORDS, COMMA, SEPARATED]">
+    <link rel="canonical" href="https://scoopster.ca/blog/[SLUG]/">
+
+    <title>[SEO TITLE ≤60 CHARACTERS] | Scoopster</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="icon" type="image/png" href="../../favicon.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="[H1 TITLE]">
+    <meta property="og:description" content="[META DESCRIPTION]">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://scoopster.ca/blog/[SLUG]/">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://scoopster.ca"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://scoopster.ca/blog"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "[H1 TITLE]"
+      }]
+    }
+    </script>
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "[H1 TITLE]",
+      "author": {
+        "@type": "Organization",
+        "name": "Scoopster"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Scoopster",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://scoopster.ca/logo.png"
+        }
+      },
+      "datePublished": "[YYYY-MM-DD]",
+      "dateModified": "[YYYY-MM-DD]",
+      "description": "[META DESCRIPTION]"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <a href="../../index.html">
+                    <span class="logo-icon">🐕</span>
+                    <span class="logo-text">Scoopster</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../" class="nav-link">Home</a></li>
+                <li><a href="../../services/" class="nav-link">Services</a></li>
+                <li class="dropdown">
+                    <a href="../../service-areas/" class="nav-link">Service Areas</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../service-areas/hamilton-mountain/" class="nav-link">Hamilton Mountain</a></li>
+                        <li><a href="../../service-areas/stoney-creek/" class="nav-link">Stoney Creek</a></li>
+                        <li><a href="../../service-areas/ancaster/" class="nav-link">Ancaster</a></li>
+                        <li><a href="../../service-areas/dundas/" class="nav-link">Dundas</a></li>
+                        <li><a href="../../service-areas/waterdown/" class="nav-link">Waterdown</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pricing/" class="nav-link">Pricing</a></li>
+                <li><a href="../../about/" class="nav-link">About</a></li>
+                <li><a href="../../contact/" class="nav-link nav-link-cta">Get a Quote</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <article class="blog-post">
+        <div class="container" style="max-width: 800px;">
+            <!-- Post Header -->
+            <header class="post-header">
+                <h1>[MAIN ARTICLE TITLE]</h1>
+                <p class="post-meta" style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; color: var(--text-light); margin-top: 1rem;">
+                    <span>📅 [Month Day, Year]</span>
+                    <span>✍️ By Scoopster</span>
+                    <span style="margin: 0 1rem;">•</span>
+                    <span>🏷️ [Category]</span>
+                </p>
+            </header>
+
+            <!-- Hero Image Section -->
+            <div class="post-featured-image" style="background: linear-gradient(135deg, var(--primary-green-light), var(--primary-green)); height: 350px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 1.5rem 0; color: white;">
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">[EMOJI ICONS]</div>
+                    <p style="font-size: 1.25rem; font-weight: 600;">[Hero Tagline]</p>
+                </div>
+            </div>
+
+            <!-- Introduction -->
+            <section class="post-intro" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin: 1.5rem 0;">
+                <p>[Introduction paragraph 1 - hook the reader]</p>
+                <p>[Introduction paragraph 2 - set up the article]</p>
+            </section>
+
+            <hr style="margin: 2.5rem 0; border: none; border-top: 2px solid var(--light-tan);">
+
+            <!-- Main Content Section 1 -->
+            <section class="content-section" style="margin: 2rem 0;">
+                <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1rem;">[Section Title]</h2>
+
+                <p style="line-height: 1.8; margin-bottom: 1rem;">[Content paragraph]</p>
+
+                <p style="line-height: 1.8; margin-bottom: 1rem;">[Content paragraph]</p>
+
+                <!-- Info Box (Blue - Key Facts) -->
+                <div style="background-color: #d1ecf1; border-left: 4px solid #0c5460; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <p style="margin: 0; font-weight: 600; color: #0c5460; font-size: 1.05rem;">[Icon] Title</p>
+                    <p style="margin: 0.75rem 0 0 0; color: #0c5460; line-height: 1.7;">[Key fact or information]</p>
+                </div>
+
+                <!-- OR Warning Box (Yellow - Important Info) -->
+                <div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <p style="margin: 0; font-weight: 600; color: #856404; font-size: 1.05rem;">⚠️ Important</p>
+                    <p style="margin: 0.75rem 0 0 0; color: #856404; line-height: 1.7;">[Important information]</p>
+                </div>
+
+                <!-- OR Pro Tip Box (Cream - Tips) -->
+                <div style="background-color: var(--cream); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <h3 style="margin-top: 0; color: var(--primary-green); font-size: 1.15rem;">💡 Pro Tip</h3>
+                    <p style="margin: 0; line-height: 1.7;">[Helpful tip or advice]</p>
+                </div>
+            </section>
+
+            <!-- Main Content Section 2 with List Items -->
+            <section class="content-section" style="margin: 2rem 0;">
+                <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1rem;">[Section Title]</h2>
+
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">[Intro paragraph for list]</p>
+
+                <!-- List of Items with Checkmarks or X's -->
+                <div style="margin: 1.5rem 0;">
+                    <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">✅ [Item Title]</h4>
+                        <p style="margin: 0; line-height: 1.7;">[Item description]</p>
+                    </div>
+
+                    <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">✅ [Item Title]</h4>
+                        <p style="margin: 0; line-height: 1.7;">[Item description]</p>
+                    </div>
+
+                    <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">❌ [Misconception]</h4>
+                        <p style="margin: 0; line-height: 1.7;">[Why it's wrong]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Box (Place strategically in content) -->
+            <aside class="blog-cta-box" style="background: linear-gradient(135deg, #2d5f3f, var(--primary-green)); color: white; padding: 2.5rem; border-radius: 12px; text-align: center; margin: 2.5rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                <h3 style="color: white; margin-top: 0; font-size: 1.75rem; margin-bottom: 1rem;">[CTA Headline]</h3>
+                <p style="color: white; font-size: 1.1rem; line-height: 1.7; max-width: 600px; margin: 0 auto 1.5rem auto;">[CTA description with <a href="../../" style="color: var(--accent-yellow); text-decoration: underline; font-weight: 600;">internal link</a>]</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="../../contact/" class="btn" style="background-color: var(--accent-yellow); color: var(--primary-green); border: none; font-weight: 600; font-size: 1.05rem; padding: 0.9rem 2rem;">Get Your Free Quote</a>
+                </div>
+            </aside>
+
+            <!-- Additional Content Sections -->
+            <section class="content-section" style="margin: 2rem 0;">
+                <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1rem;">[Section Title]</h2>
+
+                <p style="line-height: 1.8; margin-bottom: 1rem;">[Content]</p>
+            </section>
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🐕</span>
+                        <span class="logo-text">Scoopster</span>
+                    </div>
+                    <p>Professional dog poop pickup service in Hamilton, Ontario. Keep your yard clean and fresh.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../../services/weekly-dog-poop-pickup/">Weekly Pickup</a></li>
+                        <li><a href="../../services/bi-weekly-dog-poop-pickup/">Bi-Weekly Pickup</a></li>
+                        <li><a href="../../services/one-time-yard-cleanup/">One-Time Cleanup</a></li>
+                        <li><a href="../../services/commercial-pet-waste-removal/">Commercial Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="../../service-areas/hamilton-mountain/">Hamilton Mountain</a></li>
+                        <li><a href="../../service-areas/stoney-creek/">Stoney Creek</a></li>
+                        <li><a href="../../service-areas/ancaster/">Ancaster</a></li>
+                        <li><a href="../../service-areas/dundas/">Dundas</a></li>
+                        <li><a href="../../service-areas/waterdown/">Waterdown</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../pricing/">Pricing</a></li>
+                        <li><a href="../../about/">About</a></li>
+                        <li><a href="../../blog/">Blog</a></li>
+                        <li><a href="../../contact/">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+12896984155">289-698-4155</a></li>
+                        <li><a href="mailto:info@scoopster.ca">info@scoopster.ca</a></li>
+                        <li>Hamilton, Ontario</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scoopster. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
