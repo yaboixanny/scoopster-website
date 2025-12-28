@@ -364,6 +364,39 @@ window.addEventListener('scroll', () => {
 });
 
 // ===========================
+// FAQ Toggle Function
+// ===========================
+function toggleFAQ(button) {
+    const faqItem = button.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = button.querySelector('.faq-icon');
+    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+        if (otherAnswer !== answer) {
+            otherAnswer.style.maxHeight = '0';
+            const otherIcon = otherAnswer.parentElement.querySelector('.faq-icon');
+            if (otherIcon) {
+                otherIcon.textContent = '+';
+                otherIcon.style.transform = 'rotate(0deg)';
+            }
+        }
+    });
+
+    // Toggle current FAQ
+    if (isOpen) {
+        answer.style.maxHeight = '0';
+        icon.textContent = '+';
+        icon.style.transform = 'rotate(0deg)';
+    } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.textContent = '−';
+        icon.style.transform = 'rotate(180deg)';
+    }
+}
+
+// ===========================
 // Service Area Map Enhancement (Optional)
 // ===========================
 // If you want to integrate Google Maps or Leaflet.js, add the code here
