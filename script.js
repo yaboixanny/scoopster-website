@@ -1,4 +1,11 @@
 // ===========================
+// Prevent Flash of Unstyled Content (FOUC)
+// ===========================
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+});
+
+// ===========================
 // Mobile Navigation Toggle
 // ===========================
 const navToggle = document.getElementById('navToggle');
