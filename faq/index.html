@@ -261,6 +261,36 @@
                     </ul>
                 </div>
 
+                <!-- Legal & Disposal TOC -->
+                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <h3 style="color: var(--primary-green); font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>⚖️</span> Legal & Disposal
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#legal-illegal" style="color: var(--text-dark); text-decoration: none;">→ Is it illegal in Ontario?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#legal-fine" style="color: var(--text-dark); text-decoration: none;">→ How much is the fine?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#legal-report" style="color: var(--text-dark); text-decoration: none;">→ Can you report people?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#legal-neighbor" style="color: var(--text-dark); text-decoration: none;">→ Neighbor not cleaning up?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#disposal-hamilton" style="color: var(--text-dark); text-decoration: none;">→ How to dispose in Hamilton?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#disposal-flush" style="color: var(--text-dark); text-decoration: none;">→ Can you flush it?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#disposal-large-amounts" style="color: var(--text-dark); text-decoration: none;">→ Large amounts disposal?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#disposal-clean-backyard" style="color: var(--text-dark); text-decoration: none;">→ How to clean backyard?</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hiring vs DIY TOC -->
+                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <h3 style="color: var(--primary-green); font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>💼</span> Hiring vs DIY
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8;">
+                        <li style="margin-bottom: 0.5rem;"><a href="#hiring-pay-someone" style="color: var(--text-dark); text-decoration: none;">→ Can I pay someone?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#hiring-who-picks-up" style="color: var(--text-dark); text-decoration: none;">→ Who picks up professionally?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#hiring-cost-charge" style="color: var(--text-dark); text-decoration: none;">→ How much do they charge?</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="#hiring-vs-diy" style="color: var(--text-dark); text-decoration: none;">→ Hire or DIY?</a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
@@ -917,6 +947,164 @@
                     <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
                         <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
                             <p>Fresh waste will always have some smell, but the overwhelming odor that comes from weeks of buildup will be gone. Regular pickup prevents that concentrated stench from developing. If you're smelling strong odors after we've been servicing your yard for a while, something else might be going on—let us know and we'll investigate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal & Disposal -->
+            <div class="faq-category" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 3px solid var(--primary-green);">
+                    ⚖️ Legal & Disposal
+                </h2>
+
+                <div id="legal-illegal" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Is it illegal to not pick up dog poop in Ontario?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Yes, you are legally required to pick up your dog's poop in Ontario. Most municipalities, including Hamilton, have bylaws that require dog owners to immediately remove and properly dispose of pet waste in public spaces. Failing to do so can result in fines ranging from $200 to $400 or more, depending on the city.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="legal-fine" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>How much is a fine for not picking up dog poop in Hamilton?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>In Hamilton, failing to pick up your dog's waste can result in a fine of approximately $240 under the city's animal control bylaws. Repeat offenders or situations involving multiple violations may face higher penalties. It's always best to clean up immediately to avoid fines and keep our parks and neighborhoods clean.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="legal-report" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Can you report people for not picking up dog poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Yes, you can report dog owners who don't pick up their pet's waste by contacting Hamilton's Municipal Law Enforcement (bylaw enforcement). While enforcement can be challenging without witnessing the violation directly, repeated complaints about specific properties or individuals may result in investigation and potential fines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="legal-neighbor" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>What can I do about my neighbor not picking up dog poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Start with a friendly conversation—many people don't realize how much it bothers others. If that doesn't work, you can contact Hamilton bylaw enforcement to report the issue. If the waste is on your property, document it with photos and contact the city. You may also want to suggest they hire a professional service like Scoopster to keep their yard maintained.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="disposal-hamilton" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>How to dispose of dog poop in Hamilton, Ontario?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>In Hamilton, dog waste should be double-bagged and placed in your regular garbage bin (black cart). Do not put pet waste in your green bin (organics) or blue box (recycling). For large amounts of waste, consider hiring a professional service like Scoopster that handles proper disposal for you on a regular basis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="disposal-flush" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Is it okay to flush dog poop down a toilet?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Technically yes, but only the waste itself—never flush bags, wipes, or litter. While flushing dog poop is safer than leaving it in the yard, it's not always practical for large amounts. Most Hamilton residents find it easier to bag and trash it, or hire a service that handles disposal properly without the hassle.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="disposal-large-amounts" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>How to dispose of large amounts of dog poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>For large quantities of dog waste (like spring cleanups or multiple dogs), the best approach is to bag it securely and place it in your regular garbage over several collection days, or hire a professional service. Scoopster hauls away all waste we collect, so you never have to worry about overflowing bins or unpleasant odors in your trash area.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="disposal-clean-backyard" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>How to clean backyard dog poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Use a pooper scooper or rake to gather waste into bags, then dispose of it in your garbage. Walk the entire yard systematically to avoid missing spots. For best results, clean weekly to prevent buildup. Or skip the hassle entirely—Scoopster handles this for you on a regular schedule so your yard stays clean without you lifting a finger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hiring & DIY Comparison -->
+            <div class="faq-category" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-green); font-size: 1.75rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 3px solid var(--primary-green);">
+                    💼 Hiring vs DIY
+                </h2>
+
+                <div id="hiring-pay-someone" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Can I pay someone to pick up my dog's poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Absolutely! That's exactly what Scoopster does. We provide professional dog waste removal services throughout Hamilton, handling all the dirty work so you don't have to. Whether you need weekly, bi-weekly, or one-time cleanups, we'll keep your yard fresh and clean for a reasonable monthly fee.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hiring-who-picks-up" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Who picks up dog poop professionally?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Professional pet waste removal companies like Scoopster specialize in this service. We're a local Hamilton business run by dog owners who understand the importance of a clean yard. We come to your property on a regular schedule, scoop your yard thoroughly, bag the waste, and haul it away for proper disposal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hiring-cost-charge" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>How much do people charge to pick up dog poop?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>Professional dog poop pickup typically costs $20-30 per visit for weekly or bi-weekly service, depending on yard size and number of dogs. At Scoopster, weekly service starts at $25/week for most Hamilton properties. One-time deep cleanups start around $75. Pricing varies based on the amount of waste and accessibility of your yard.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hiring-vs-diy" class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--light-tan); border-radius: 8px; overflow: hidden;">
+                    <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 1.5rem; background-color: var(--cream); border: none; cursor: pointer; font-size: 1.05rem; font-weight: 600; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center;">
+                        <span>Is it better to hire or DIY pooper scooping?</span>
+                        <span class="faq-icon" style="font-size: 1.5rem; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background-color: var(--white);">
+                        <div style="padding: 1.5rem; color: var(--text-dark); line-height: 1.7;">
+                            <p>It depends on your priorities. DIY is free but time-consuming and unpleasant. Hiring a service costs money but saves time, ensures consistency, and keeps your yard cleaner. Most of our clients tell us the $25/week is well worth never having to scoop again—especially families with multiple dogs or busy schedules.</p>
                         </div>
                     </div>
                 </div>
