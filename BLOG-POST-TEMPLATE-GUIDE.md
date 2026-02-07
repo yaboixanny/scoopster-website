@@ -169,7 +169,7 @@ This template provides a consistent, professional format for all Scoopster blog 
 ## CTA Box
 
 ```html
-<aside class="blog-cta-box" style="background: linear-gradient(135deg, #2d5f3f, var(--primary-green)); ...">
+<aside class="blog-cta-box" style="background: linear-gradient(135deg, var(--primary-green-dark), var(--primary-green)); ...">
     <h3 style="color: white; margin-top: 0; font-size: 1.75rem; margin-bottom: 1rem;">
         [CTA Headline]
     </h3>

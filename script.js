@@ -219,23 +219,26 @@ function showSuccessMessage() {
     successBox.style.cssText = `
         background: white;
         padding: 3rem;
-        border-radius: 12px;
+        border-radius: 24px;
         text-align: center;
-        max-width: 500px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        max-width: 480px;
+        margin: 0 1rem;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     `;
 
     successBox.innerHTML = `
-        <div style="font-size: 4rem; margin-bottom: 1rem;">✅</div>
-        <h2 style="color: #4A7C4E; margin-bottom: 1rem;">Quote Request Sent!</h2>
-        <p style="color: #6B6B6B; margin-bottom: 2rem;">
+        <div style="font-size: 3.5rem; margin-bottom: 1.25rem;">✅</div>
+        <h2 style="color: #0f172a; margin-bottom: 0.75rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;">Quote Request Sent!</h2>
+        <p style="color: #64748b; margin-bottom: 2rem; line-height: 1.7; font-size: 0.95rem;">
             Thank you for contacting Scoopster! We'll review your information and
             send you a personalized quote within 24 hours.
         </p>
         <button onclick="this.parentElement.parentElement.remove()"
-                style="background: #4A7C4E; color: white; padding: 0.875rem 2rem;
-                       border: none; border-radius: 8px; font-size: 1rem;
-                       font-weight: 600; cursor: pointer;">
+                style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 0.875rem 2rem;
+                       border: none; border-radius: 100px; font-size: 0.95rem;
+                       font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
+                       font-family: 'Inter', sans-serif;">
             Close
         </button>
     `;
@@ -310,8 +313,8 @@ if (phoneInput) {
 // Intersection Observer for Animations
 // ===========================
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px -40px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -326,13 +329,13 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll(
-        '.service-card, .why-item, .price-card, .stat-item, .area-item'
+        '.service-card, .why-item, .price-card, .stat-item, .area-item, .step, .related-card, .faq-item, .included-item, .related-post-card'
     );
 
-    animatedElements.forEach(el => {
+    animatedElements.forEach((el, i) => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.transform = 'translateY(16px)';
+        el.style.transition = `opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${(i % 6) * 0.06}s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${(i % 6) * 0.06}s`;
         observer.observe(el);
     });
 });
@@ -353,21 +356,16 @@ if ('loading' in HTMLImageElement.prototype) {
 }
 
 // ===========================
-// Header Scroll Effect
+// Header Scroll Effect (Glassmorphism)
 // ===========================
-let lastScroll = 0;
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll > 100) {
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    if (window.pageYOffset > 20) {
+        header.classList.add('scrolled');
     } else {
-        header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+        header.classList.remove('scrolled');
     }
-
-    lastScroll = currentScroll;
 });
 
 // ===========================
