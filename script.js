@@ -15,6 +15,7 @@ if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', String(navMenu.classList.contains('active')));
     });
 
     // Close menu when clicking on a link
@@ -23,6 +24,7 @@ if (navToggle && navMenu) {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -31,6 +33,7 @@ if (navToggle && navMenu) {
         if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         }
     });
 }
@@ -43,19 +46,10 @@ function calculatePrice() {
     const yardSize = document.getElementById('yardSize').value;
     const frequency = document.getElementById('frequency').value;
 
-    // Base pricing logic
-    let basePrice = 0;
-
-    // Dog count pricing
-    if (numDogs === 1) {
-        basePrice = 15;
-    } else if (numDogs === 2) {
-        basePrice = 22;
-    } else if (numDogs === 3) {
-        basePrice = 28;
-    } else {
-        basePrice = 35;
-    }
+    // Use the published service starting rates; the result remains an estimate.
+    const startingRate = { weekly: 25, biweekly: 20, onetime: 75 }[frequency];
+    const additionalDogEstimate = { 1: 0, 2: 7, 3: 13, 4: 20 }[numDogs];
+    const basePrice = startingRate + additionalDogEstimate;
 
     // Yard size multiplier
     let sizeMultiplier = 1;
@@ -75,10 +69,10 @@ function calculatePrice() {
         frequencyMultiplier = 1;
         frequencyText = 'per week';
     } else if (frequency === 'biweekly') {
-        frequencyMultiplier = 1.4;
+        frequencyMultiplier = 1;
         frequencyText = 'per visit (bi-weekly)';
     } else if (frequency === 'onetime') {
-        frequencyMultiplier = 3;
+        frequencyMultiplier = 1;
         frequencyText = 'one-time service';
     }
 
@@ -310,43 +304,12 @@ if (phoneInput) {
 }
 
 // ===========================
-// Intersection Observer for Animations
-// ===========================
-const observerOptions = {
-    threshold: 0.05,
-    rootMargin: '0px 0px -40px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe elements for fade-in animation
-document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll(
-        '.service-card, .why-item, .price-card, .stat-item, .area-item, .step, .related-card, .faq-item, .included-item, .related-post-card'
-    );
-
-    animatedElements.forEach((el, i) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(16px)';
-        el.style.transition = `opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${(i % 6) * 0.06}s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) ${(i % 6) * 0.06}s`;
-        observer.observe(el);
-    });
-});
-
-// ===========================
 // Performance: Lazy Loading
 // ===========================
 if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach(img => {
-        img.src = img.dataset.src;
+        if (img.dataset.src) img.src = img.dataset.src;
     });
 } else {
     // Fallback for browsers that don't support lazy loading
@@ -381,6 +344,7 @@ function toggleFAQ(button) {
     document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
         if (otherAnswer !== answer) {
             otherAnswer.style.maxHeight = '0';
+            otherAnswer.parentElement.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
             const otherIcon = otherAnswer.parentElement.querySelector('.faq-icon');
             if (otherIcon) {
                 otherIcon.textContent = '+';
@@ -390,6 +354,7 @@ function toggleFAQ(button) {
     });
 
     // Toggle current FAQ
+    button.setAttribute('aria-expanded', String(!isOpen));
     if (isOpen) {
         answer.style.maxHeight = '0';
         icon.textContent = '+';

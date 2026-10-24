@@ -8,8 +8,8 @@
     <link rel="canonical" href="https://scoopster.ca/blog/[SLUG]/">
 
     <title>[SEO TITLE ≤60 CHARACTERS] | Scoopster</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../styles.css?v=20261024c">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="[H1 TITLE]">
@@ -63,23 +63,14 @@
       "description": "[META DESCRIPTION]"
     }
     </script>
-    <style>
-        body {
-            opacity: 0;
-            transition: opacity 0.1s ease-in;
-        }
-        body.loaded {
-            opacity: 1;
-        }
-    </style>
 </head>
-<body>
+<body class="site-page page-blog-post-template.html">
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
             <div class="nav-logo">
                 <a href="../../index.html">
-                    <span class="logo-icon">🐕</span>
+
                     <span class="logo-text">Scoopster</span>
                 </a>
             </div>
@@ -100,7 +91,7 @@
                 <li><a href="../../about/" class="nav-link">About</a></li>
                 <li><a href="../../contact/" class="nav-link nav-link-cta">Get a Quote</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="navMenu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -115,20 +106,15 @@
             <header class="post-header">
                 <h1>[MAIN ARTICLE TITLE]</h1>
                 <p class="post-meta" style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; color: var(--text-light); margin-top: 1rem;">
-                    <span>📅 [Month Day, Year]</span>
-                    <span>✍️ By Scoopster</span>
+                    <span> [Month Day, Year]</span>
+                    <span> By Scoopster</span>
                     <span style="margin: 0 1rem;">•</span>
-                    <span>🏷️ [Category]</span>
+                    <span> [Category]</span>
                 </p>
             </header>
 
             <!-- Hero Image Section -->
-            <div class="post-featured-image" style="background: linear-gradient(135deg, var(--primary-green-light), var(--primary-green)); height: 350px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 1.5rem 0; color: white;">
-                <div style="text-align: center;">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">[EMOJI ICONS]</div>
-                    <p style="font-size: 1.25rem; font-weight: 600;">[Hero Tagline]</p>
-                </div>
-            </div>
+
 
             <!-- Introduction -->
             <section class="post-intro" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); margin: 1.5rem 0;">
@@ -154,13 +140,13 @@
 
                 <!-- OR Warning Box (Yellow - Important Info) -->
                 <div style="background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                    <p style="margin: 0; font-weight: 600; color: #856404; font-size: 1.05rem;">⚠️ Important</p>
+                    <p style="margin: 0; font-weight: 600; color: #856404; font-size: 1.05rem;"> Important</p>
                     <p style="margin: 0.75rem 0 0 0; color: #856404; line-height: 1.7;">[Important information]</p>
                 </div>
 
                 <!-- OR Pro Tip Box (Cream - Tips) -->
                 <div style="background-color: var(--cream); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                    <h3 style="margin-top: 0; color: var(--primary-green); font-size: 1.15rem;">💡 Pro Tip</h3>
+                    <h3 style="margin-top: 0; color: var(--primary-green); font-size: 1.15rem;"> Pro Tip</h3>
                     <p style="margin: 0; line-height: 1.7;">[Helpful tip or advice]</p>
                 </div>
             </section>
@@ -174,17 +160,17 @@
                 <!-- List of Items with Checkmarks or X's -->
                 <div style="margin: 1.5rem 0;">
                     <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">✅ [Item Title]</h4>
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;"> [Item Title]</h4>
                         <p style="margin: 0; line-height: 1.7;">[Item description]</p>
                     </div>
 
                     <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">✅ [Item Title]</h4>
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;"> [Item Title]</h4>
                         <p style="margin: 0; line-height: 1.7;">[Item description]</p>
                     </div>
 
                     <div style="background-color: var(--white); padding: 1.5rem; border-left: 4px solid var(--primary-green); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;">❌ [Misconception]</h4>
+                        <h4 style="margin-top: 0; color: var(--primary-green); font-size: 1.1rem;"> [Misconception]</h4>
                         <p style="margin: 0; line-height: 1.7;">[Why it's wrong]</p>
                     </div>
                 </div>
@@ -215,7 +201,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-icon">🐕</span>
+
                         <span class="logo-text">Scoopster</span>
                     </div>
                     <p>Professional dog poop pickup service in Hamilton, Ontario. Keep your yard clean and fresh.</p>
@@ -263,7 +249,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Scoopster. All rights reserved.</p>
+                <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>
@@ -272,6 +258,6 @@
         </div>
     </footer>
 
-    <script src="../../script.js"></script>
+    <script src="../../script.js?v=20261024c"></script>
 </body>
 </html>
