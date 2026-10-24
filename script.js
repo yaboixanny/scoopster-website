@@ -143,7 +143,7 @@ if (contactForm) {
 
         // Phone validation (basic)
         const phoneRegex = /^[\d\s\-\(\)\.+]+$/;
-        if (!phoneRegex.test(phone) || phone.length < 10) {
+        if ((document.getElementById('phone').required || phone) && (!phoneRegex.test(phone) || phone.length < 10)) {
             isValid = false;
             errorMessage += 'Please enter a valid phone number.\n';
         }
