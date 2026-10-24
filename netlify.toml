@@ -1,4 +1,5 @@
 [build]
+  command = "node generate-sitemap.js"
   publish = "."
 
 # Disable Netlify's automatic sitemap generation
@@ -31,4 +32,22 @@
   from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
+  force = true
+
+[[redirects]]
+  from = "/service-areas/newmarket"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/newmarket/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/service-areas/newmarket/index.html"
+  to = "/"
+  status = 301
   force = true

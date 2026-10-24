@@ -1,3 +1,7 @@
+# Retired Newmarket service-area page
+RewriteEngine On
+RewriteRule ^service-areas/newmarket(?:/index\.html|/)?$ / [R=301,L]
+
 # Ensure XML files are served with correct MIME type
 <FilesMatch "\.xml$">
   Header set Content-Type "application/xml; charset=utf-8"
