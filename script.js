@@ -93,6 +93,7 @@ function calculatePrice() {
 
 // Initialize calculator with default values
 document.addEventListener('DOMContentLoaded', () => {
+    if (!document.getElementById('numDogs')) return;
     calculatePrice();
 
     // Update price when selections change
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
 
         // Get form values
@@ -170,26 +171,24 @@ if (contactForm) {
             return;
         }
 
-        // Create form data object
-        const formData = {
-            name,
-            email,
-            phone,
-            address,
-            dogs,
-            service,
-            message,
-            timestamp: new Date().toISOString()
-        };
-
-        // Log form data (in production, this would be sent to a server)
-        console.log('Form submitted:', formData);
-
-        // Show success message
-        showSuccessMessage();
-
-        // Reset form
-        contactForm.reset();
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        if (submitButton.disabled) return;
+        submitButton.disabled = true;
+        try {
+            const body = new URLSearchParams(new FormData(contactForm)).toString();
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body
+            });
+            if (!response.ok) throw new Error('Submission was not accepted');
+            showSuccessMessage();
+            contactForm.reset();
+        } catch (_) {
+            alert('Your request could not be sent. Please try again or call 289-698-4155. Your details are still in the form.');
+        } finally {
+            submitButton.disabled = false;
+        }
     });
 }
 
@@ -222,14 +221,13 @@ function showSuccessMessage() {
     `;
 
     successBox.innerHTML = `
-        <div style="font-size: 3.5rem; margin-bottom: 1.25rem;">✅</div>
-        <h2 style="color: #0f172a; margin-bottom: 0.75rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;">Quote Request Sent!</h2>
-        <p style="color: #64748b; margin-bottom: 2rem; line-height: 1.7; font-size: 0.95rem;">
+        <h2 style="color: #20382c; margin-bottom: 0.75rem; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;">Quote Request Sent!</h2>
+        <p style="color: #65736a; margin-bottom: 2rem; line-height: 1.7; font-size: 0.95rem;">
             Thank you for contacting Scoopster! We'll review your information and
             send you a personalized quote within 24 hours.
         </p>
         <button onclick="this.parentElement.parentElement.remove()"
-                style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; padding: 0.875rem 2rem;
+                style="background: #27634b; color: white; padding: 0.875rem 2rem;
                        border: none; border-radius: 100px; font-size: 0.95rem;
                        font-weight: 600; cursor: pointer; box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
                        font-family: 'Inter', sans-serif;">

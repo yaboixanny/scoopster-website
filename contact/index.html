@@ -12,50 +12,57 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Contact"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact"
     }
+  ]
+}
     </script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How quickly will I hear back?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We respond within a few hours on business days, usually faster."
-        }
-      },{
-        "@type": "Question",
-        "name": "Can I book online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use this form to request service and we'll follow up to confirm details and scheduling."
-        }
-      },{
-        "@type": "Question",
-        "name": "What if I just have a question?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "That's fine too. Ask away — no commitment needed."
-        }
-      }]
+      "@type": "Question",
+      "name": "How quickly will I hear back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We respond within a few hours on business days, usually faster."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use this form to request service and we'll follow up to confirm details and scheduling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I just have a question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That's fine too. Ask away — no commitment needed."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body class="site-page page-contact">
@@ -304,13 +311,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../script.js?v=20261024c"></script>
+    <script src="../script.js?v=20261024d"></script>
 </body>
 </html>

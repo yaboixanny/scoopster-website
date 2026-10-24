@@ -13,3 +13,8 @@ RewriteRule ^service-areas/newmarket(?:/index\.html|/)?$ / [R=301,L]
 <FilesMatch "sitemap\.xml$">
   Header set Access-Control-Allow-Origin "*"
 </FilesMatch>
+
+# Keep the authoring template out of search results.
+<Files "blog-post-template.html">
+  Header set X-Robots-Tag "noindex, nofollow"
+</Files>

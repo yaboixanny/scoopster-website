@@ -19,86 +19,95 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://scoopster.ca/blog"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Best Stoney Creek Parks for Socializing Your Puppy"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://scoopster.ca/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Best Stoney Creek Parks for Socializing Your Puppy"
     }
+  ]
+}
     </script>
 
     <!-- Article Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "The Best Stoney Creek Parks for Socializing Your Puppy",
-      "author": {
-        "@type": "Organization",
-        "name": "Scoopster"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Scoopster",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://scoopster.ca/logo.png"
-        }
-      },
-      "datePublished": "2025-12-22",
-      "dateModified": "2025-12-22",
-      "description": "Discover the best parks in Stoney Creek for puppy socialization. From Battlefield Park to off-leash areas, find the right spots to build your puppy's confidence."
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Best Stoney Creek Parks for Socializing Your Puppy",
+  "author": {
+    "@type": "Organization",
+    "name": "Scoopster"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Scoopster",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://scoopster.ca/images/favicon.svg"
     }
+  },
+  "datePublished": "2025-12-22",
+  "dateModified": "2025-12-22",
+  "description": "Discover the best parks in Stoney Creek for puppy socialization. From Battlefield Park to off-leash areas, find the right spots to build your puppy's confidence."
+}
     </script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "When can I start taking my puppy to parks in Stoney Creek?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can begin leashed park visits after your puppy's first round of vaccinations, typically around 8 to 10 weeks. Stick to on-leash areas where you can control interactions and avoid spots with heavy dog traffic. Wait until your puppy is fully vaccinated—usually around 16 weeks—before visiting off-leash dog parks where they'll have direct contact with unfamiliar dogs."
-        }
-      },{
-        "@type": "Question",
-        "name": "How often should I socialize my puppy at parks?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Aim for short, positive outings several times per week rather than long, exhausting sessions. Three to four 15-minute visits spread throughout the week builds more confidence than one hour-long trip that leaves your puppy overstimulated. Consistency matters more than duration, especially in the critical socialization window between 8 and 16 weeks."
-        }
-      },{
-        "@type": "Question",
-        "name": "What should I do if my puppy seems scared at the park?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Create distance immediately and let your puppy observe from a comfortable range. Don't force them closer to whatever is triggering the fear response. Use treats and calm praise to create positive associations from a distance, and gradually decrease that distance over multiple visits as your puppy shows signs of relaxation. If fear persists, consider working with a professional trainer who uses positive reinforcement methods."
-        }
-      },{
-        "@type": "Question",
-        "name": "Are Stoney Creek conservation areas good for puppies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, with some caveats. Conservation areas like Devil's Punchbowl and Felker's Falls offer excellent environmental enrichment—different terrain, nature sounds, wildlife smells—that helps build well-rounded dogs. However, trails can be more physically demanding, so wait until your puppy has decent stamina and some foundational socialization before tackling longer hikes. Always keep puppies leashed on conservation trails."
-        }
-      }]
+      "@type": "Question",
+      "name": "When can I start taking my puppy to parks in Stoney Creek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can begin leashed park visits after your puppy's first round of vaccinations, typically around 8 to 10 weeks. Stick to on-leash areas where you can control interactions and avoid spots with heavy dog traffic. Wait until your puppy is fully vaccinated—usually around 16 weeks—before visiting off-leash dog parks where they'll have direct contact with unfamiliar dogs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I socialize my puppy at parks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for short, positive outings several times per week rather than long, exhausting sessions. Three to four 15-minute visits spread throughout the week builds more confidence than one hour-long trip that leaves your puppy overstimulated. Consistency matters more than duration, especially in the critical socialization window between 8 and 16 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if my puppy seems scared at the park?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Create distance immediately and let your puppy observe from a comfortable range. Don't force them closer to whatever is triggering the fear response. Use treats and calm praise to create positive associations from a distance, and gradually decrease that distance over multiple visits as your puppy shows signs of relaxation. If fear persists, consider working with a professional trainer who uses positive reinforcement methods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Stoney Creek conservation areas good for puppies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with some caveats. Conservation areas like Devil's Punchbowl and Felker's Falls offer excellent environmental enrichment—different terrain, nature sounds, wildlife smells—that helps build well-rounded dogs. However, trails can be more physically demanding, so wait until your puppy has decent stamina and some foundational socialization before tackling longer hikes. Always keep puppies leashed on conservation trails."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body class="site-page page-blog">
@@ -331,13 +340,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../../script.js?v=20261024c"></script>
+    <script src="../../script.js?v=20261024d"></script>
 </body>
 </html>

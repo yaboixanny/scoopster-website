@@ -19,86 +19,95 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://scoopster.ca/blog"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Is Deodorizing Spray Good for Dogs?"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://scoopster.ca/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Is Deodorizing Spray Good for Dogs?"
     }
+  ]
+}
     </script>
 
     <!-- Article Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Is Deodorizing Spray Good for Dogs? Safety, Benefits, & Risks Explained",
-      "author": {
-        "@type": "Organization",
-        "name": "Scoopster"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Scoopster",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://scoopster.ca/logo.png"
-        }
-      },
-      "datePublished": "2026-01-05",
-      "dateModified": "2026-01-05",
-      "description": "Is deodorizing spray safe for your pup? We break down the benefits, toxic ingredients to avoid, and how to safely freshen your dog's coat between baths."
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Is Deodorizing Spray Good for Dogs? Safety, Benefits, & Risks Explained",
+  "author": {
+    "@type": "Organization",
+    "name": "Scoopster"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Scoopster",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://scoopster.ca/images/favicon.svg"
     }
+  },
+  "datePublished": "2026-01-05",
+  "dateModified": "2026-01-05",
+  "description": "Is deodorizing spray safe for your pup? We break down the benefits, toxic ingredients to avoid, and how to safely freshen your dog's coat between baths."
+}
     </script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Can I use human perfume on my dog?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Human perfume often contains high levels of alcohol and chemicals that can irritate a dog's skin and disrupt their natural pH balance. Always use products specifically formulated for dogs."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How often can I use deodorizing spray on my dog?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most gentle, alcohol-free sprays can be used every 2-3 days or as needed for freshness. However, avoid soaking the coat, and discontinue use if you notice any itching or dryness."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Do I need to rinse off dog deodorizing spray?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Most dog deodorizing sprays are designed as 'leave-in' treatments. Simply spray, brush through, and let it dry naturally."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Does deodorizing spray get rid of 'wet dog' smell?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, it can help neutralize the odor. However, it is most effective if you towel dry the dog first before applying the spray."
-        }
-      }]
+      "@type": "Question",
+      "name": "Can I use human perfume on my dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Human perfume often contains high levels of alcohol and chemicals that can irritate a dog's skin and disrupt their natural pH balance. Always use products specifically formulated for dogs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often can I use deodorizing spray on my dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most gentle, alcohol-free sprays can be used every 2-3 days or as needed for freshness. However, avoid soaking the coat, and discontinue use if you notice any itching or dryness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to rinse off dog deodorizing spray?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most dog deodorizing sprays are designed as 'leave-in' treatments. Simply spray, brush through, and let it dry naturally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does deodorizing spray get rid of 'wet dog' smell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it can help neutralize the odor. However, it is most effective if you towel dry the dog first before applying the spray."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body class="site-page page-blog">
@@ -351,7 +360,7 @@
 
             <aside class="blog-cta-box" style="background: linear-gradient(135deg, var(--primary-green-dark), var(--primary-green)); color: white; padding: 2.5rem; border-radius: 12px; text-align: center; margin: 3rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
                 <h3 style="color: white; margin-top: 0; font-size: 1.75rem; margin-bottom: 1rem;">Keep Your Yard Fresh Too</h3>
-                <p style="color: white; font-size: 1.1rem; line-height: 1.7;">While you're keeping your dog smelling fresh, don't forget about your yard. Our professional <a href="../../services/deodorizing-services/" style="color: var(--accent-yellow); text-decoration: underline; font-weight: 600;">Yard Deodorizing Service</a> uses non-toxic, pet-safe enzyme treatments to eliminate stubborn urine and waste odors from your outdoor space. Safe for pets, kids, and the environment—just like the best dog sprays.</p>
+                <p style="color: white; font-size: 1.1rem; line-height: 1.7;">Need help with odours outdoors? Our <a href="../../services/deodorizing-services/">yard deodorizing service</a> is separate from coat-care products. Ask about the treatment, suitable surfaces and label precautions before booking; an outdoor product should not be applied to your dog.</p>
                 <a href="../../services/deodorizing-services/" class="btn" style="background-color: var(--accent-yellow); color: var(--primary-green); border: none; font-weight: 600; padding: 0.9rem 2rem; margin-top: 1rem; display: inline-block; text-decoration: none; border-radius: 6px;">Learn About Yard Deodorizing</a>
             </aside>
 
@@ -450,13 +459,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../../script.js?v=20261024c"></script>
+    <script src="../../script.js?v=20261024d"></script>
 </body>
 </html>

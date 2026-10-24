@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="[META DESCRIPTION 150-160 CHARACTERS]">
     <meta name="keywords" content="[KEYWORDS, COMMA, SEPARATED]">
-    <link rel="canonical" href="https://scoopster.ca/blog/[SLUG]/">
 
     <title>[SEO TITLE ≤60 CHARACTERS] | Scoopster</title>
     <link rel="stylesheet" href="../../styles.css?v=20261024c">
@@ -19,49 +19,53 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://scoopster.ca/blog"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "[H1 TITLE]"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://scoopster.ca/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "[H1 TITLE]"
     }
+  ]
+}
     </script>
 
     <!-- Article Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "[H1 TITLE]",
-      "author": {
-        "@type": "Organization",
-        "name": "Scoopster"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Scoopster",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://scoopster.ca/logo.png"
-        }
-      },
-      "datePublished": "[YYYY-MM-DD]",
-      "dateModified": "[YYYY-MM-DD]",
-      "description": "[META DESCRIPTION]"
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[H1 TITLE]",
+  "author": {
+    "@type": "Organization",
+    "name": "Scoopster"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Scoopster",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://scoopster.ca/images/favicon.svg"
     }
+  },
+  "datePublished": "[YYYY-MM-DD]",
+  "dateModified": "[YYYY-MM-DD]",
+  "description": "[META DESCRIPTION]"
+}
     </script>
 </head>
 <body class="site-page page-blog-post-template.html">
@@ -251,13 +255,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../../script.js?v=20261024c"></script>
+    <script src="../../script.js?v=20261024d"></script>
 </body>
 </html>

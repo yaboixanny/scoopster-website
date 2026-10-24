@@ -19,93 +19,103 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://scoopster.ca/blog"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Dog-Friendly Waterfalls in Hamilton"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://scoopster.ca/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dog-Friendly Waterfalls in Hamilton"
     }
+  ]
+}
     </script>
 
     <!-- Article Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "A Guide to Dog-Friendly Waterfalls in the City of Waterfalls",
-      "author": {
-        "@type": "Organization",
-        "name": "Scoopster"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Scoopster",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://scoopster.ca/logo.png"
-        }
-      },
-      "datePublished": "2025-12-23",
-      "dateModified": "2025-12-23",
-      "description": "Explore the best dog-friendly waterfalls in Hamilton, the City of Waterfalls. Trail difficulty, leash rules, parking info, and tips for hiking with your dog."
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A Guide to Dog-Friendly Waterfalls in the City of Waterfalls",
+  "author": {
+    "@type": "Organization",
+    "name": "Scoopster"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Scoopster",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://scoopster.ca/images/favicon.svg"
     }
+  },
+  "datePublished": "2025-12-23",
+  "dateModified": "2025-12-23",
+  "description": "Explore the best dog-friendly waterfalls in Hamilton, the City of Waterfalls. Trail difficulty, leash rules, parking info, and tips for hiking with your dog."
+}
     </script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Are dogs allowed at Hamilton waterfalls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, dogs are allowed at most Hamilton waterfall trails, though they must be kept on a leash. The waterfalls covered in this guide all permit dogs. Some areas within conservation lands may have restrictions, so check trail signage when you arrive. The gorge areas below certain falls, like Albion Falls, are closed to everyone including dogs for safety reasons."
-        }
-      },{
-        "@type": "Question",
-        "name": "Which Hamilton waterfall hike is easiest for dogs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tiffany Falls is the easiest—short, mostly boardwalk, and accessible for dogs of any age or fitness level. Felker's Falls is a close second with its well-maintained loop trail and moderate length. Both are good starting points if you're not sure how your dog handles trail hiking."
-        }
-      },{
-        "@type": "Question",
-        "name": "Do I need to pay for parking at Hamilton waterfalls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Spencer Gorge, which includes Webster's Falls and Tew's Falls, requires paid parking and advance reservations during peak season. Most other waterfall trails in Hamilton have free parking, though lots can fill up quickly on weekends. Arrive early to secure a spot at popular locations like Albion Falls and Devil's Punchbowl."
-        }
-      },{
-        "@type": "Question",
-        "name": "What's the best time of year to visit waterfalls with a dog?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Fall is arguably the best season—cooler temperatures keep dogs comfortable, crowds thin out after summer, and the foliage adds colour to every hike. Spring offers the most dramatic water flow from snowmelt but brings muddy trail conditions. Summer weekends are the busiest and hottest, making early morning visits essential. Winter can be beautiful when falls freeze, but icy trails require caution and may not be suitable for all dogs."
-        }
-      },{
-        "@type": "Question",
-        "name": "Can my dog swim at Hamilton waterfalls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It's generally not recommended. The pools at the base of falls often have slippery rocks, unpredictable currents, and cold water even in summer. Some areas are explicitly closed for swimming and wading. If your dog loves water, save it for a designated dog beach or calm section of a creek away from the falls themselves."
-        }
-      }]
+      "@type": "Question",
+      "name": "Are dogs allowed at Hamilton waterfalls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, dogs are allowed at most Hamilton waterfall trails, though they must be kept on a leash. The waterfalls covered in this guide all permit dogs. Some areas within conservation lands may have restrictions, so check trail signage when you arrive. The gorge areas below certain falls, like Albion Falls, are closed to everyone including dogs for safety reasons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Hamilton waterfall hike is easiest for dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tiffany Falls is the easiest—short, mostly boardwalk, and accessible for dogs of any age or fitness level. Felker's Falls is a close second with its well-maintained loop trail and moderate length. Both are good starting points if you're not sure how your dog handles trail hiking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to pay for parking at Hamilton waterfalls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spencer Gorge, which includes Webster's Falls and Tew's Falls, requires paid parking and advance reservations during peak season. Most other waterfall trails in Hamilton have free parking, though lots can fill up quickly on weekends. Arrive early to secure a spot at popular locations like Albion Falls and Devil's Punchbowl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best time of year to visit waterfalls with a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fall is arguably the best season—cooler temperatures keep dogs comfortable, crowds thin out after summer, and the foliage adds colour to every hike. Spring offers the most dramatic water flow from snowmelt but brings muddy trail conditions. Summer weekends are the busiest and hottest, making early morning visits essential. Winter can be beautiful when falls freeze, but icy trails require caution and may not be suitable for all dogs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my dog swim at Hamilton waterfalls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's generally not recommended. The pools at the base of falls often have slippery rocks, unpredictable currents, and cold water even in summer. Some areas are explicitly closed for swimming and wading. If your dog loves water, save it for a designated dog beach or calm section of a creek away from the falls themselves."
+      }
     }
+  ]
+}
     </script>
 </head>
 <body class="site-page page-blog">
@@ -415,6 +425,6 @@
         </div>
     </footer>
 
-    <script src="../../script.js?v=20261024c"></script>
+    <script src="../../script.js?v=20261024d"></script>
 </body>
 </html>

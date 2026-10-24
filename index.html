@@ -14,42 +14,44 @@
     <meta property="og:description" content="Professional dog poop pickup service in Hamilton. Weekly yard cleaning to keep your lawn fresh and clean.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scoopster.ca">
-    <meta property="og:image" content="https://scoopster.ca/og-image.jpg">
+    <meta property="og:image" content="https://scoopster.ca/images/scoopster-about.jpg">
 
     <!-- Structured Data for Local Business -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Scoopster",
-      "description": "Professional dog poop pickup and pet waste removal service in Hamilton, Ontario",
-      "url": "https://scoopster.ca",
-      "telephone": "+1-289-698-4155",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "",
-        "addressLocality": "Hamilton",
-        "addressRegion": "ON",
-        "postalCode": "",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "43.2557",
-        "longitude": "-79.8711"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Hamilton",
-        "containedIn": {
-          "@type": "AdministrativeArea",
-          "name": "Ontario"
-        }
-      },
-      "serviceType": ["Dog Waste Removal", "Pet Waste Removal", "Yard Cleanup"],
-      "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-17:00"
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Scoopster",
+  "description": "Professional dog poop pickup and pet waste removal service in Hamilton, Ontario",
+  "url": "https://scoopster.ca",
+  "telephone": "+1-289-698-4155",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hamilton",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "43.2557",
+    "longitude": "-79.8711"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Hamilton",
+    "containedIn": {
+      "@type": "AdministrativeArea",
+      "name": "Ontario"
     }
+  },
+  "serviceType": [
+    "Dog Waste Removal",
+    "Pet Waste Removal",
+    "Yard Cleanup"
+  ],
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-17:00"
+}
     </script>
 
     <title>Scoopster | Dog Poop Pickup Service in Hamilton, Ontario</title>
@@ -387,16 +389,16 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-number">Weekly</div>
+                        <div class="stat-label">Recurring Yard Care</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">5,000+</div>
-                        <div class="stat-label">Yards Cleaned</div>
+                        <div class="stat-number">One-Time</div>
+                        <div class="stat-label">Catch-up Cleanups</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Satisfaction Rate</div>
+                        <div class="stat-number">Local</div>
+                        <div class="stat-label">Hamilton Service</div>
                     </div>
                 </div>
             </div>
@@ -414,7 +416,9 @@
             <p class="section-subtitle">Start enjoying a clean yard today</p>
 
             <div class="contact-content">
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" name="homepage-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="homepage-quote">
+                    <p hidden><label>Leave this empty: <input name="bot-field"></label></p>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -638,13 +642,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js?v=20261024c"></script>
+    <script src="script.js?v=20261024d"></script>
 </body>
 </html>

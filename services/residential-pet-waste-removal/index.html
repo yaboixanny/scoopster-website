@@ -12,50 +12,54 @@
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://scoopster.ca"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Services",
-        "item": "https://scoopster.ca/services"
-      },{
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Residential Pet Waste Removal"
-      }]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://scoopster.ca"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://scoopster.ca/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Residential Pet Waste Removal"
     }
+  ]
+}
     </script>
 
     <!-- Service Schema -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Residential Pet Waste Removal",
-      "description": "Professional residential pet waste removal service for homeowners. Weekly, bi-weekly, and one-time yard cleanup.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Scoopster"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Hamilton",
-        "containedIn": "Ontario"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "CAD",
-        "price": "25",
-        "description": "Starting at $25/week for weekly service"
-      }
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Residential Pet Waste Removal",
+  "description": "Professional residential pet waste removal service for homeowners. Weekly, bi-weekly, and one-time yard cleanup.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Scoopster"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Hamilton",
+    "containedIn": "Ontario"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "CAD",
+    "price": "25",
+    "description": "Starting at $25/week for weekly service"
+  }
+}
     </script>
 
     <!-- FAQ Schema -->
@@ -461,13 +465,13 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Scoopster. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:info@scoopster.ca?subject=Privacy%20enquiry">Privacy Enquiries</a>
+                    <a href="/services/residential-pet-waste-removal/">Service Details</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../../script.js?v=20261024c"></script>
+    <script src="../../script.js?v=20261024d"></script>
 </body>
 </html>
