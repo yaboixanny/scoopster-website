@@ -1,5 +1,7 @@
 # Retired Newmarket service-area page
 RewriteEngine On
+# Consolidated Ancaster park guide
+RewriteRule ^blog/best-dog-parks-in-ancaster(?:/index\.html|/)?$ /blog/best-dog-parks-hamilton/ [R=301,L]
 RewriteRule ^service-areas/newmarket(?:/index\.html|/)?$ / [R=301,L]
 
 # Ensure XML files are served with correct MIME type

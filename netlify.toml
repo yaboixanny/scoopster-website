@@ -51,3 +51,21 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/blog/best-dog-parks-in-ancaster"
+  to = "/blog/best-dog-parks-hamilton/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/best-dog-parks-in-ancaster/"
+  to = "/blog/best-dog-parks-hamilton/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/best-dog-parks-in-ancaster/index.html"
+  to = "/blog/best-dog-parks-hamilton/"
+  status = 301
+  force = true
